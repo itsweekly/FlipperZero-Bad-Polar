@@ -5,4 +5,4 @@
 </picture>
 
 # Things that I have coded for the Flipper Zero specifically BadUSB
-## Thanks Jakoby you shared the original files, I have just added onto them [Flipper Zero Official Website](https://github.com/I-Am-Jakoby)
+## Thanks Jakoby you shared the original files, I have just added onto them [His Github](https://github.com/I-Am-Jakoby)

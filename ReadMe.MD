@@ -1,5 +1,5 @@
 <picture>
     <img
         alt="Inspired by Jakoby"
-        src="/.github/assets/light_theme_banner.png">
+        src="https://github.com/itsweekly/FlipperZero-Bad-Polar/blob/main/JakobyFire.png">
 </picture>

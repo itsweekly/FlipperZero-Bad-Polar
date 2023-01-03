@@ -1,8 +1,8 @@
 REM     Title: Subscribe
 
-REM     Author: OpenAI
+REM     Author: Polar
 
-REM     Description: This payload is meant to download and run a script from a URL without saving it to the file system
+REM     Description: 
 
 REM     Target: Windows 10, 11
 

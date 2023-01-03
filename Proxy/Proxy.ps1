@@ -13,3 +13,5 @@ Start-Sleep -Seconds 2
 
 # Delete the temporary file
 Remove-Item $tempFile
+
+# powershell C:\Users\michael\Downloads\Sand.ps1 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Verbose

